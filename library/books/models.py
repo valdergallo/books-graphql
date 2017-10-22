@@ -10,6 +10,7 @@ class Book(models.Model):
     author = models.ForeignKey(Author)
     tags = models.ManyToManyField(Tags)
     points = models.IntegerField()
+    pub_date = models.DateField(auto_now_add=False)
 
     def __str__(self):
         return self.name
