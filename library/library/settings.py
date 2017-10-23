@@ -133,6 +133,9 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 50
+
 GRAPHENE = {
     'SCHEMA': 'books.schemas.schema.books_schema' # Where your Graphene schema lives
 }
