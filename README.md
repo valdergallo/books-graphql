@@ -2,7 +2,7 @@
 Project with Django and API graphQL using Haystack
 
 ## Haystack
-Testing to use haystack with GraphQL
+Use haystack with GraphQL to search values
 
 ## GraphQL
 Im using default implementation with GraphQL
