@@ -12,7 +12,9 @@ class Query(graphene.ObjectType):
     @graphene.resolve_only_args
     def resolve_books(self):
         # return Book.objects.all()
-        return SearchQuerySet().filter(content='book').order_by('-pub_date')
+        result = SearchQuerySet().filter(content='book').order_by('-pub_date')
+        return result
+
 
 
 books_schema = graphene.Schema(query=Query)
