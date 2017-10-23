@@ -132,3 +132,7 @@ HAYSTACK_CONNECTIONS = {
         'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
     },
 }
+
+GRAPHENE = {
+    'SCHEMA': 'books.schemas.schema.books_schema' # Where your Graphene schema lives
+}

@@ -1,0 +1,4 @@
+{{ object.name }}
+{{ object.slug }}
+{{ object.author.get_full_name }}
+{{ object.description }}

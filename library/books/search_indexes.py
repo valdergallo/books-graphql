@@ -4,6 +4,7 @@ from books.models import Book
 
 
 class BookIndex(indexes.SearchIndex, indexes.Indexable):
+    text = indexes.CharField(document=True, use_template=True)
     name = indexes.CharField(model_attr='name')
     author = indexes.CharField(model_attr='author')
     tags = indexes.CharField(model_attr='tags')
